@@ -10,8 +10,8 @@ async function getNewQuote() {
   let data = await response.json();
   quote = data[0].content;
   author = data[0].title;
-  document.getElementById("text").innerText = quote;
-  document.getElementById("author").innerText = author;
+  document.getElementById("text").innerHTML = quote;
+  document.getElementById("author").innerHTML = `-${author}`;
 }
 
 const sendTweet = () => {
