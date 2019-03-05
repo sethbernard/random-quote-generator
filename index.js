@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", getNewQuote);
 
 let url =
-  "https://cors-anywhere.herokuapp.com/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+  "https://cors-anywhere.herokuapp.com/https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
 let quote, author;
 
@@ -15,8 +15,7 @@ async function getNewQuote() {
 }
 
 const sendTweet = () => {
-  let twitterUrl = (document.getElementById("tweet-quote").href =
-    "https://twitter.com/intent/tweet?text=");
+  let twitterUrl = document.getElementById("tweet-quote").href;
   let tweet = twitterUrl + encodeURI(quote) + " -" + encodeURI(author);
   window.open(tweet);
 };
