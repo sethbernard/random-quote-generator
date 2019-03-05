@@ -15,8 +15,10 @@ async function getNewQuote() {
 }
 
 const sendTweet = () => {
-  let twitterUrl = document.getElementById("tweet-quote").href;
-  let tweet = twitterUrl + encodeURI(quote) + " -" + encodeURI(author);
+  let twitterUrl = (document.getElementById("tweet-quote").href =
+    "https://twitter.com/intent/tweet?text=");
+  let tweet =
+    twitterUrl + encodeURI(quote.replace(/(<([^>]+)>)/gi, " ")) + " -" + author;
   window.open(tweet);
 };
 
