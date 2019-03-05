@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(170, 160, 160);
+}
+#quote-machine {
+  text-align: center;
+}
+
+#quote-box {
+  width: 500px;
+  height: fixed;
+  display: inline-block;
+}
