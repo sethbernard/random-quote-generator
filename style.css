@@ -4,9 +4,24 @@ body {
 #quote-machine {
   text-align: center;
 }
+h1 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 50px;
+}
 
 #quote-box {
   width: 500px;
   height: fixed;
   display: inline-block;
+}
+
+#text {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Cuprum', sans-serif;
 }
