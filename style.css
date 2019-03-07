@@ -2,16 +2,16 @@ body {
   background-color: #303030;
   background-image: url('https://www.transparenttextures.com/patterns/tileable-wood-colored.png');
 }
-#quote-machine {
-  text-align: center;
-  color: white;
-  height: 100%;
-  width: 100%;
+#quote-generator {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  position: fixed;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #fbfbfb;
 }
 h1 {
   font-family: 'Secular One', sans-serif;
@@ -19,9 +19,9 @@ h1 {
 }
 
 #quote-box {
+  display: inline-block;
   width: 500px;
   height: fixed;
-  display: inline-block;
 }
 
 #text {
@@ -40,25 +40,25 @@ button {
 }
 
 #new-quote {
-  margin-right: 8px;
   padding: 7px;
   border-radius: 6px;
-  cursor: pointer;
-  outline: none;
-  font-size: 20px;
-  background-color: #26a69a;
-  color: white;
   border: none;
+  outline: none;
+  margin-right: 8px;
+  background-color: #26a69a;
+  color: #fbfbfb;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #tweet-quote {
-  margin-left: 8px;
   padding: 7px;
   border-radius: 6px;
-  cursor: pointer;
-  outline: none;
-  font-size: 20px;
-  background-color: #1da1f2;
-  color: white;
   border: none;
+  outline: none;
+  margin-left: 8px;
+  background-color: #1da1f2;
+  color: #fbfbfb;
+  font-size: 20px;
+  cursor: pointer;
 }
