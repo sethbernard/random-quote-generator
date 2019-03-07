@@ -2,19 +2,23 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Secular+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Random Quote Generator</title>
     <meta charset="UTF-8" />
   </head>
   <body>
     <div id="quote-machine">
-      <h1 id="header">Random Quote Machine</h1>
+      <h1 id="header">Random Quote Generator</h1>
       <div id="quote-box">
         <div id="text"></div>
         <h2 id="author"></h2>
-        <button id="new-quote">New Quote</button>
+        <button id="new-quote">
+          <i id ="refresh" class="fas fa-sync-alt"></i>
+        </button>
         <button id="tweet-quote">
-          Tweet</a></button>    
+            <i class="fab fa-twitter"></i>
+          </a></button>    
     </div>
     <script type="text/javascript" src="index.js"></script>
   </body>
