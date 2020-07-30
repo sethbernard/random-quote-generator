@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/sethbernard/random-quote-generator#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^2.0.4"
   }
 }

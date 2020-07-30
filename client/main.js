@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', getNewQuote);
 
 let url =
-  'https://cors-anywhere.herokuapp.com/https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1';
+  'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&filter[posts_per_page]=1';
 
 let quote, author;
 
 async function getNewQuote() {
   let response = await fetch(url, { cache: 'no-cache' });
   let data = await response.json();
-  quote = data[0].content;
-  author = data[0].title;
+
+  let length = data.length;
+  let random = Math.floor(Math.random() * length);
+  quote = data[random].content.rendered;
+  author = data[random].title.rendered;
   document.getElementById('text').innerHTML = quote;
   document.getElementById('author').innerHTML = `-${author}`;
 }
